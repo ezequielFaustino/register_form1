@@ -1,0 +1,24 @@
+@use 'variables'
+@use 'reset'
+@use 'mixins'
+
+.header
+  display: flex
+  justify-content: space-between
+  padding: 1.5rem 0
+  background-color: variables.$bg-color 
+
+  a
+    margin: 0 1rem
+    color: variables.$primary-color
+    transition: .4s
+    &:hover
+      color: variables.$secondary-color
+
+  &-left
+    @include mixins.flex-center
+  
+  &-navbar
+    ul
+      @include mixins.flex-center
+
