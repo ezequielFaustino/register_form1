@@ -5,7 +5,7 @@
 .header
   display: flex
   justify-content: space-between
-  padding: 1.5rem 0
+  padding: 1.5rem 1rem
   background-color: variables.$bg-color 
 
   a
@@ -22,3 +22,32 @@
     ul
       @include mixins.flex-center
 
+main
+  @include mixins.container
+  @include mixins.flex-center
+
+.register
+  @include mixins.container
+  min-width: 45%
+
+  &-title
+    font-size: 2rem
+    margin-bottom: 1.5rem
+
+  &-field
+    display: flex
+    flex-direction: column
+    gap: .5rem 
+    margin-bottom: 1.5rem
+
+    label
+      font-weight: bold
+
+    input
+      @include mixins.rounded-input
+    
+  #submit-btn
+    @include mixins.submit-btn
+
+  
+  

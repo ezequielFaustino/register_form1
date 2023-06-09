@@ -9,3 +9,20 @@
   display: flex
   align-items: center
   justify-content: center
+
+@mixin rounded-input
+  padding: .6rem 1rem
+  border: 1px solid variables.$secondary-color
+  border-radius: 5px
+
+@mixin submit-btn
+  padding: .6rem .3rem
+  min-width: 100%
+  border: none
+  background-color: variables.$bg-color
+  color: variables.$primary-color
+  cursor: pointer
+
+  &:hover
+    opacity: 0.9
+  

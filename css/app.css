@@ -52,7 +52,7 @@ a {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem 0;
+  padding: 1.5rem 1rem;
   background-color: #245953;
 }
 .header a {
@@ -72,6 +72,51 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+main {
+  max-width: 73.125em;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register {
+  max-width: 73.125em;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  min-width: 45%;
+}
+.register-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.register-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.register-field label {
+  font-weight: bold;
+}
+.register-field input {
+  padding: 0.6rem 1rem;
+  border: 1px solid #D8D8D8;
+  border-radius: 5px;
+}
+.register #submit-btn {
+  padding: 0.6rem 0.3rem;
+  min-width: 100%;
+  border: none;
+  background-color: #245953;
+  color: #fff;
+  cursor: pointer;
+}
+.register #submit-btn:hover {
+  opacity: 0.9;
 }
 
 /*# sourceMappingURL=app.css.map */
