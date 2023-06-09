@@ -49,6 +49,14 @@ a {
   text-decoration: none;
 }
 
+.footer-link {
+  font-size: 0.9rem;
+  color: #408E91;
+}
+.footer-link:hover {
+  text-decoration: underline;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -88,6 +96,7 @@ main {
   padding: 1.5rem 0;
   margin: 0 auto;
   min-width: 45%;
+  border-bottom: 2px solid #D8D8D8;
 }
 .register-title {
   font-size: 2rem;
@@ -117,6 +126,29 @@ main {
 }
 .register #submit-btn:hover {
   opacity: 0.9;
+}
+
+.footer {
+  max-width: 73.125em;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+}
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.footer #author {
+  color: #408E91;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=app.css.map */

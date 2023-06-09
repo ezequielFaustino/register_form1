@@ -1,6 +1,7 @@
 @use 'variables'
 @use 'reset'
 @use 'mixins'
+@use 'footer-links'
 
 .header
   display: flex
@@ -29,6 +30,7 @@ main
 .register
   @include mixins.container
   min-width: 45%
+  border-bottom: 2px solid variables.$secondary-color
 
   &-title
     font-size: 2rem
@@ -48,6 +50,25 @@ main
     
   #submit-btn
     @include mixins.submit-btn
+
+
+.footer
+  @include mixins.container
+
+  &-top
+    @include mixins.flex-center
+    flex-wrap: wrap
+    gap: 1rem
+  
+  p
+    @include mixins.flex-center
+    margin-top: 1.5rem
+
+  #author
+    color: variables.$link-color
+    font-weight: bold
+
+
 
   
   
